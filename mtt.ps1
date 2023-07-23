@@ -1,5 +1,5 @@
 $agentsInstallerUrl = 'https://download.mql5.com/cdn/web/metaquotes.software.corp/mt5/mt5tester.setup.exe'
-$agentsInstallerOutFile = 'C:\Users\joshua24\Downloads\mt5tester.setup.exe'
+$agentsInstallerOutFile = 'C:\Temp\mt5tester.setup.exe'
 $agentsInstallerPath = 'C:\Program Files\MetaTrader 5 Strategy Tester\MetaTester64.exe'
 $password = 'MetaTester'
 $startingPort = 2000
