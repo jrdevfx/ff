@@ -8,6 +8,8 @@ $numberOfAgents = 96
 Invoke-WebRequest -Uri $agentsInstallerUrl -OutFile $agentsInstallerOutfile -UseBasicParsing
 Start-Process -FilePath $agentsInstallerOutFile /silent -Wait
 
+Start-Sleep -Seconds 15
+
 for ($i = 1; $i -le $numberOfAgents; $i++) {
     $port = $startingPort + $i - 1
     Start-Process -FilePath $agentsInstallerPath -ArgumentList "/install", "/silent", "/password:$password", "/address:0.0.0.0:$port" -Wait
