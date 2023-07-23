@@ -15,3 +15,5 @@ for ($i = 1; $i -le $numberOfAgents; $i++) {
     
     #Start-Process -FilePath $agentsInstallerPath -ArgumentList "/uninstall", "/silent", "/address:0.0.0.0:$port"
 }
+
+Set-NetFirewallProfile -Profile Domain,Public,Private -Enabled False
