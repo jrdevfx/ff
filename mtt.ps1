@@ -5,7 +5,7 @@ $password = 'MetaTester'
 $startingPort = 2000
 $numberOfAgents = 96
 
-Invoke-WebRequest -Uri $agentsInstallerUrl -OutFile $agentsInstallerOutfile
+Invoke-WebRequest -Uri $agentsInstallerUrl -OutFile $agentsInstallerOutfile -UseBasicParsing
 Start-Process -FilePath $agentsInstallerOutFile /silent -Wait
 
 for ($i = 1; $i -le $numberOfAgents; $i++) {
